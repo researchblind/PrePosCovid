@@ -74,16 +74,16 @@ def showBoxplotComparationPrePosPandemic():
 		palette=custom_palette
 	)
 
-	ax.set_xlabel('Question', fontsize=20)
-	ax.set_ylabel('Grade', fontsize=20)
+	ax.set_xlabel('Question', fontsize=25)
+	ax.set_ylabel('Grade', fontsize=25)
 
 	# Increase size of tick labels
-	ax.tick_params(axis='x', labelsize=15)
-	ax.tick_params(axis='y', labelsize=15)
+	ax.tick_params(axis='x', labelsize=20)
+	ax.tick_params(axis='y', labelsize=20)
 
 	legend = ax.legend()
 	for text in legend.get_texts():
-		text.set_fontsize(15)
+		text.set_fontsize(20)
 
 	plt.show()
 
@@ -101,16 +101,16 @@ def showBoxplotComparationPosPandemic():
 		palette=custom_palette
 	)
 
-	ax.set_xlabel('Question', fontsize=30)
-	ax.set_ylabel('Grade', fontsize=30)
+	ax.set_xlabel('Question', fontsize=25)
+	ax.set_ylabel('Grade', fontsize=25)
 
 	# Increase size of tick labels
-	ax.tick_params(axis='x', labelsize=25)
-	ax.tick_params(axis='y', labelsize=25)
+	ax.tick_params(axis='x', labelsize=20)
+	ax.tick_params(axis='y', labelsize=20)
 
 	legend = ax.legend()
 	for text in legend.get_texts():
-		text.set_fontsize(25)
+		text.set_fontsize(15)
 
 	plt.show()
 
