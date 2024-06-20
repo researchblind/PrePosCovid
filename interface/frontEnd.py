@@ -67,12 +67,24 @@ def showBoxplotComparationPrePosPandemic():
 	custom_palette = {'2019': "white", '2022-1': "gray"}
 	
 	# create grouped boxplot  
-	sns.boxplot (	
+	ax = sns.boxplot (	
 		x = data['Question'], 
 		y = data['Grade'], 
 		hue = data['Semester'],
 		palette=custom_palette
 	)
+
+	ax.set_xlabel('Question', fontsize=20)
+	ax.set_ylabel('Grade', fontsize=20)
+
+	# Increase size of tick labels
+	ax.tick_params(axis='x', labelsize=15)
+	ax.tick_params(axis='y', labelsize=15)
+
+	legend = ax.legend()
+	for text in legend.get_texts():
+		text.set_fontsize(15)
+
 	plt.show()
 
 def showBoxplotComparationPosPandemic():
@@ -82,12 +94,27 @@ def showBoxplotComparationPosPandemic():
 	custom_palette = {2022: "white", 2023: "gray"}
 	
 	# create grouped boxplot  
-	sns.boxplot (	
+	ax = sns.boxplot (	
 		x = data['Question'], 
 		y = data['Grade'], 
 		hue = data['Semester'],
 		palette=custom_palette
 	)
+
+	ax.set_xlabel('Question', fontsize=30)
+	ax.set_ylabel('Grade', fontsize=30)
+
+	# Increase size of tick labels
+	ax.tick_params(axis='x', labelsize=25)
+	ax.tick_params(axis='y', labelsize=25)
+
+	legend = ax.legend()
+	for text in legend.get_texts():
+		text.set_fontsize(25)
+
+	plt.show()
+
+
 	plt.show()
 
 def questionSemesterBoxPlot(question, semester):
