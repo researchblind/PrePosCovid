@@ -110,7 +110,7 @@ def showBoxplotComparationPosPandemic():
 
 	legend = ax.legend()
 	for text in legend.get_texts():
-		text.set_fontsize(15)
+		text.set_fontsize(20)
 
 	plt.show()
 
